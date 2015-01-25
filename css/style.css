@@ -136,3 +136,18 @@ html, body
 {
     text-decoration: none;
 }
+
+.content
+{
+    background-color: #FFFFFF;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+    text-align: left;
+    width: 80%;
+    height: 1200px;
+    margin-top: 50px;
+    -webkit-box-shadow: 0px 0px 52px 5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 52px 5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 52px 5px rgba(0,0,0,1);
+}
