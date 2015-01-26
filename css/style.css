@@ -303,3 +303,20 @@ html, body
 		-webkit-transform: translateX(0%);
 	}
 }
+
+#rightSide p
+{
+    font-size: 20px;
+    padding-top: 150px;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: white;
+}
+
+#leftSide h1
+{
+    color: red;
+    margin-top: 150px;
+    margin-left:  200px;
+    font-size: 60px;
+}
