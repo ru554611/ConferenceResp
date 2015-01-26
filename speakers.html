@@ -10,9 +10,48 @@
         
         <div class="global">
             <div class="content">
+                <div class="speakerLeft" id="1">
+                    <img src="images/jon_snow_by_mila_casillas-d4ssa86-1.jpg"/>
+                    <p>LLLLLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula velit, ullamcorper vulputate consectetur nec, condimentum vel nisi. Vivamus vel lectus risus. Maecenas laoreet dictum posuere. Aliquam quis efficitur ligula. Duis ullamcorper condimentum felis. Nullam aliquet tristique placerat. Maecenas nec posuere risus. Proin mollis enim vitae erat ultricies sagittis. Nam cursus odio quis orci tempus, vel blandit orci molestie. Maecenas interdum ornare magna, at tempus augue aliquam sed. Vivamus vel sem nisl. Vestibulum augue dolor, pulvinar eu aliquet vitae, pretium eu tellus. Sed tempor elit dignissim, porttitor mauris eu, porttitor purus.</p>
+                </div>
+                <div class="speakerRight" id="2">
+                    <img src="images/jon_snow_by_mila_casillas-d4ssa86-1.jpg"/>
+                    <p>LLLLLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula velit, ullamcorper vulputate consectetur nec, condimentum vel nisi. Vivamus vel lectus risus. Maecenas laoreet dictum posuere. Aliquam quis efficitur ligula. Duis ullamcorper condimentum felis. Nullam aliquet tristique placerat. Maecenas nec posuere risus. Proin mollis enim vitae erat ultricies sagittis. Nam cursus odio quis orci tempus, vel blandit orci molestie. Maecenas interdum ornare magna, at tempus augue aliquam sed. Vivamus vel sem nisl. Vestibulum augue dolor, pulvinar eu aliquet vitae, pretium eu tellus. Sed tempor elit dignissim, porttitor mauris eu, porttitor purus.</p>
+                </div>
+                <div class="speakerLeft" id="3">
+                    <img src="images/jon_snow_by_mila_casillas-d4ssa86-1.jpg"/>
+                    <p>LLLLLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula velit, ullamcorper vulputate consectetur nec, condimentum vel nisi. Vivamus vel lectus risus. Maecenas laoreet dictum posuere. Aliquam quis efficitur ligula. Duis ullamcorper condimentum felis. Nullam aliquet tristique placerat. Maecenas nec posuere risus. Proin mollis enim vitae erat ultricies sagittis. Nam cursus odio quis orci tempus, vel blandit orci molestie. Maecenas interdum ornare magna, at tempus augue aliquam sed. Vivamus vel sem nisl. Vestibulum augue dolor, pulvinar eu aliquet vitae, pretium eu tellus. Sed tempor elit dignissim, porttitor mauris eu, porttitor purus.</p>
+                </div>
+                <div class="speakerRight" id="4">
+                    <img src="images/jon_snow_by_mila_casillas-d4ssa86-1.jpg"/>
+                    <p>LLLLLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula velit, ullamcorper vulputate consectetur nec, condimentum vel nisi. Vivamus vel lectus risus. Maecenas laoreet dictum posuere. Aliquam quis efficitur ligula. Duis ullamcorper condimentum felis. Nullam aliquet tristique placerat. Maecenas nec posuere risus. Proin mollis enim vitae erat ultricies sagittis. Nam cursus odio quis orci tempus, vel blandit orci molestie. Maecenas interdum ornare magna, at tempus augue aliquam sed. Vivamus vel sem nisl. Vestibulum augue dolor, pulvinar eu aliquet vitae, pretium eu tellus. Sed tempor elit dignissim, porttitor mauris eu, porttitor purus.</p>
+                </div>
                 
             </div>
         </div>
     </body>
+    <script>
+    $(window).scroll(function() {
+        $('.speakerLeft').each(function(){
+        var imagePos = $(this).offset().top;
+ 
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow +500) {
+                $(this).addClass("slideLeft");
+            }
+        });
+    });
+        $(window).scroll(function() {
+        $('.speakerRight').each(function(){
+        var imagePos = $(this).offset().top;
+ 
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow +500) {
+                $(this).addClass("slideRight");
+            }
+        });
+    });
+        
+</script>
     <script type="text/javascript" src="js/animation.js"></script>
 </html>
