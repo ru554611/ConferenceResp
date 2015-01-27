@@ -306,8 +306,8 @@ html, body
 
 #rightSide p
 {
-    font-size: 20px;
-    padding-top: 150px;
+    font-size: 35px;
+    padding-top: 120px;
     padding-left: 45px;
     padding-right: 45px;
     color: white;
@@ -319,4 +319,17 @@ html, body
     margin-top: 150px;
     margin-left:  200px;
     font-size: 60px;
+}
+
+#innerBlock
+{
+    margin: 0 auto;
+    margin-top: 40%;
+    width: 400px;
+    height: 400px;
+    background: #71D7F0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0.5;
 }
